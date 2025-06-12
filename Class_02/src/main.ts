@@ -32,6 +32,7 @@ console.log(director1);
 
 
 //objeto simple
+/*
 let persona={
   nombre: "Omar",
   apellido: "PEREZ",
@@ -53,5 +54,6 @@ const alumno1: person = {
 }
 
 console.log(alumno1);
+*/
 
 //Interfaces y Clases
