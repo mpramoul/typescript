@@ -103,7 +103,28 @@ class productDelivery extends product {
         super(nombre, categoria, precio);
         this.envio = envio;
     }
+    muestraDelivery() {
+    }
 }
 const cafeCappu = new productDelivery("Cappuccino", "Cafes", 7.50, true);
 console.log(cafeCappu);
 console.log(cafeCappu.muestraProducto());
+const director1 = {
+    name: "Luis",
+    age: 42,
+    data: "He is amazing"
+};
+console.log(director1);
+//objeto simple
+let persona = {
+    nombre: "Omar",
+    apellido: "PEREZ",
+    edad: 42
+};
+console.log(persona);
+const alumno1 = {
+    name: "mpramoul",
+    edad: 45,
+    alumno: true
+};
+console.log(alumno1);
