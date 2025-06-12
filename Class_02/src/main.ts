@@ -57,3 +57,42 @@ console.log(alumno1);
 */
 
 //Interfaces y Clases
+
+interface iProducto {
+  nombre: string;
+  categoria: string;
+  precio: number;
+  delivery: boolean;
+  mostrarDelivery(): void;
+}
+
+class Producto implements iProducto{
+  nombre: string;
+  categoria: string;
+  precio: number;
+  delivery: boolean;
+  constructor(
+    nombre: string,
+    categoria: string,
+    precio: number,
+    delivery: boolean
+    )
+  {
+    this.nombre = nombre;
+    this.categoria = categoria;
+    this.precio = precio;
+    this.delivery = delivery;
+  }
+
+  mostrarProducto(){
+    return(`Nombre: ${this.nombre} Categoría ${this.categoria} Precio: ${this.precio}, Delivery: ${this.delivery}`);
+  }
+  mostrarDelivery(){
+    return("Delivery");
+  }
+
+}
+
+const cafeExpresso = new Producto("Express","Cafés", 5.50, true)
+console.log(cafeExpresso);
+console.log(cafeExpresso.mostrarDelivery());

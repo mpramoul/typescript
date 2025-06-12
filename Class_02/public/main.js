@@ -6,28 +6,20 @@ const director1 = {
     data: "He is amazing"
 };
 console.log(director1);
-//objeto simple
-/*
-let persona={
-  nombre: "Omar",
-  apellido: "PEREZ",
-  edad: 42
+class Producto {
+    constructor(nombre, categoria, precio, delivery) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.precio = precio;
+        this.delivery = delivery;
+    }
+    mostrarProducto() {
+        return (`Nombre: ${this.nombre} Categoría ${this.categoria} Precio: ${this.precio}, Delivery: ${this.delivery}`);
+    }
+    mostrarDelivery() {
+        return ("Delivery");
+    }
 }
-console.log(persona);
-
-//objeto con type
-type person={
-  name: string,
-  edad: number,
-  alumno: boolean
-}
-
-const alumno1: person = {
-  name: "mpramoul",
-  edad: 45,
-  alumno: true
-}
-
-console.log(alumno1);
-*/
-//Interfaces y Clases
+const cafeExpresso = new Producto("Express", "Cafés", 5.50, true);
+console.log(cafeExpresso);
+console.log(cafeExpresso.mostrarDelivery());
